@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sony Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="abrir-ventana" href=""><img class="logo" src="img/logo_sony.png" alt=""></a> <!--PRESIONAR-->
+
+            <div class="box">
+                <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search..." />
+                </div>
+            </div>
+
+            <ul>
+                <li><a href="https://es-la.facebook.com/login/" target="_blank">Inicio sesion</a></li>
+                <li><a href="https://es-la.facebook.com/r.php?locale=es_LA&display=page" target="_blank">Crear
+                        perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul class="barra-baja">
+        <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">+ Ofertas por tiempo limitado</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vyzO-5vt48g" target="_blank">+ Categoria</a></li>
+        <li><a href="http://127.0.0.1:5500/index2.html" target="_blank">+ Lo Ultimo en Audición </a></li>
+        <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">+ Lo Ultimo en Smart TV </a></li>
+    </ul>
+
+
+
+    <!--++++++++++++++++++++++++ BANNER SLIDER +++++++++++++++++++-->
+    <div class="slideshow-container">
+
+       
+        <div class="mySlides fade">
+            <img src="img/banner_numero_1.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/banner-2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/banner-3.jpg" style="width:100%">
+        </div>
+
+       
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <!--+++++++++++++++ INTRODUCCION ++++++++++++++-->
+    <div class="container-bienvenida">
+        <h1 data-aos="zoom-out">Bienvenido a la Nueva Era del Entretenimiento Digital</h1>
+    </div>
+
+    <div class="container-descripcion">
+        <div>
+            <p id="eliminarP">
+                Disfruta de la nueva era del entretenimiento, crea tu espacio de entretenimiento<br>definitivo junto a
+                nuestros productos<br> Smart TV de 8K, Bocinas acústicas con audio 3D impulsadas con inteligencia
+                artificial
+                y MAS
+            </p>
+            <p id="cambio_color">
+                El entretenimiento nos ofrece una amplia gama de posibilidades para disfrutar de momentos
+                inolvidables.<br>
+                A medida que la tecnología avanza, nuestras opciones se multiplican<br> y se adaptan a nuestras
+                preferencias
+                personales.<br>Aquí te presento algunas de las características más emocionantes de este emocionante
+                mundo
+                digital:
+            </p>
+           <button class="boton_change" onclick="borrarP()">presioone para eliminar "bienvenida"</button>
+           <button class="boton_change" onclick="cambiaColor()">cambiar color</button>
+        </div>
+    </div>
+
+    <div class="container-lo-mejor">
+
+        <div class="titulo-mejor">
+            <h2 data-aos="fade-up"
+            data-aos-anchor-placement="bottom-center">¡Lo Mejor de cada mundo en UN solo lugar!</h2>
+            <button class="boton_change" onclick="cambiarFondo()">Cambiar Fondo</button> <!--CAMBIAR FONDO-->
+        </div>
+
+        <div class="container-padre">
+            <div class="container">
+                <h3 data-aos="flip-left">Videojuegos</h3>
+                <img class="productos-index" src="img/R (2).png" alt=""  data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <h2 data-aos="flip-left">4K</h2>
+                <h2 data-aos="flip-left">de resolución </h2>
+                <p data-aos="flip-left">1 Terabite de Almacenamiento</p>
+                <p data-aos="flip-left">364 Videojuegos en total</p>
+                <p data-aos="flip-left">Alto rendimiento</p>
+            </div>
+            <div class="container">
+                <h3 data-aos="flip-right">Audicion</h3>
+                <img class="productos-index" src="img/R (2).png" alt=""  data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <h2 data-aos="flip-right">Dolby Atmos</h2>
+                <h2 data-aos="flip-right">Audio Envolvente</h2>
+                <p data-aos="flip-right">Cancelación de ruido</p>
+                <p data-aos="flip-right">48 hrs de Autonomia</p>
+                <p data-aos="flip-right">Funciones inteligentes</p>
+            </div>
+            <div class="container">
+                <h3 data-aos="flip-left">Transmisión</h3>
+                <img class="productos-index" src="img/R (2).png" alt="" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <h2 data-aos="flip-left">8K Ultra</h2>
+                <h2 data-aos="flip-left">de resolución </h2>
+                <p data-aos="flip-left">Pantallas OLED y AMOLED</p>
+                <p data-aos="flip-left">55 Pulgadas</p>
+                <p data-aos="flip-left">Google TV</p>
+            </div>
+            
+        </div>
+       
+    </div>
+   
+
+    <div class="container-audicion">
+        <div class="titulo-audicion">
+            <h2 data-aos="flip-left">¡Lo mejor en audición al mejor precio!</h2>
+        </div>
+        <div class="container-productos-audicion">
+            <div class="container">
+                <img data-aos="flip-left" class="img-audifono-1" src="img/audifonos-1.jpg" alt="">
+            </div>
+            <div class="container">
+                <img data-aos="flip-left" class="img-audifono-1" src="img/audifono-2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-television">
+        <div class="titulo-televsion">
+            <h2>¡Disfruta con cada detalles tus series y peliculas!</h2>
+        </div>
+        <!-- CARRUSEL PLUGIN JS   -->
+    <main>
+        <div class="f-carousel" id="myCarousel">
+          <div class="f-carousel__slide"><img src="img/tv_1_vr2.jpeg" alt=""></div>
+          <div class="f-carousel__slide"><img src="img/tv_2_vr2.jpeg" alt=""></div>
+          <div class="f-carousel__slide"><img src="img/tv_3_vr2.jpeg" alt=""></div>
+          <div class="f-carousel__slide"><img src="img/tv_1_vr2.jpeg" alt=""></div>
+          <div class="f-carousel__slide"><img src="img/tv_2_vr2.jpeg" alt=""></div>
+          <div class="f-carousel__slide"><img src="img/tv_3_vr2.jpeg" alt=""></div>
+          <div class="f-carousel__slide"><img src="img/tv_1_vr2.jpeg" alt=""></div>
+          <div class="f-carousel__slide"><img src="img/tv_2_vr2.jpeg" alt=""></div>
+          <div class="f-carousel__slide"><img src="img/tv_3_vr2.jpeg" alt=""></div>
+          <div class="f-carousel__slide"><img src="img/tv_1_vr2.jpeg" alt=""></div>
+        </div>
+  
+        <div class="f-carousel" id="myNavigation">
+          <div class="f-carousel__slide">1</div>
+          <div class="f-carousel__slide">2</div>
+          <div class="f-carousel__slide">3</div>
+          <div class="f-carousel__slide">4</div>
+          <div class="f-carousel__slide">5</div>
+          <div class="f-carousel__slide">6</div>
+          <div class="f-carousel__slide">7</div>
+          <div class="f-carousel__slide">8</div>
+          <div class="f-carousel__slide">9</div>
+          <div class="f-carousel__slide">10</div>
+        </div>
+
+    </div>
+
+
+    <div class="container-audicion">
+        <div class="titulo-audicion">
+            <h2 data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">¡Entretenimiento SIN LIMITES!</h2>
+        </div>
+        <div class="container-productos-audicion">
+            <div class="container">
+                <img data-aos="flip-up" class="img-audifono-1" src="img/ps_4.jpg" alt="">
+            </div>
+            <div class="container">
+                <img data-aos="flip-up" class="img-consolas-ps5" src="img/ps5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
+        <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+        <img src="..." class="rounded me-2" alt="...">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+        Hello, world! This is a toast message.
+        </div>
+    </div>
+    </div> -->
+  
+     <footer>
+        <div class="iconos">
+            <div class="img-envio">
+                <img src="img/paquete.png" alt="">
+                <p>Envio Rapido y Directo</p>
+            </div>
+            <div class="img-medios">
+                <img src="img/signo-de-dolar.png" alt="">
+                <p>Medios de Pago</p>
+            </div>
+            <div class="img-dudas">
+                <img src="img/chat.png" alt="">
+                <p>¿tienes dudas?</p>
+            </div>
+        </div>
+        <div class="condiciones">
+            <div class="descubrir_y_comprar">
+                <h4><strong>Descubrir y comprar</strong></h4>
+                <p>Tienda</p>
+                <p>Celulares</p>
+                <p>Televisores</p>
+                <p>Camaras</p>
+                <p>Reproductor</p>
+                <p>Consolas</p>
+                <p>Audio</p>
+                <p>Microfonos</p>
+                <p>Accesorios</p>
+                <p>Gift Cards</p>
+                <p>Multimedia</p>
+            </div>
+            <div class="cuenta">
+                <h4><strong>Cuenta</strong></h4>
+                <p>Administrar tu SonyID</p>
+                <p>Cuenta de Sony Store</p>
+                <p>Entretenimiento</p>
+                <p>PlayStation Network</p>
+                <p>Crunchiroll</p>
+                <p>Paramount Plus</p>
+                <p>Sony Pictures</p>
+            </div>
+            <div class="valores_sony">
+                <h4><strong>Valores Sony</strong></h4>
+                <p>Accesibilidad</p>
+                <p>Educacion</p>
+                <p>Medio ambiente</p>
+                <p>Privacidad</p>
+                <p>Acerca de Sony</p>
+                <p>News room</p>
+                <p>Directivos de Sony</p>
+                <p>Oportunidades</p>
+                <p>Inversionistas</p>
+                <p>Etica y cumplimiento de politicas</p>
+                <p>Eventos</p>
+                <p>Contactar a Sony</p>
+            </div>
+        </div>
+        <div class="barra_final">
+            <img src="img/logo_sony.png" alt="logotipo">
+            <p>Copyright © 2024 Sony inc. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
+
+
+
+<!--++++++++++++++++++++++  BOOTSTRAP LINK postada: Por A o B al activar el link de Bostrap causa problemas ++++++++++++++++++++++++++-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+<!--LINK DE FANCYAPPS-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+<!-- LINK DE fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<!-- LINK DE AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- LINK LOCAL -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

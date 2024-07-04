@@ -1,0 +1,450 @@
+/* @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'); */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: auto;
+}
+
+
+h1 {
+    font-family: Segoe UI Emoji;
+    font-weight: 300;
+    color: #21AAC6;
+    font-size: 36px;
+}
+
+
+h2 {
+    font-family: Segoe UI;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+
+h3 {
+    font-family: Segoe UI;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+
+h4 {
+    font-family: Segoe UI;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+p {
+    font-family: Segoe UI;
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 35px;
+}
+
+/* HEADER */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    background-color: #2F265D;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Segoe UI;
+    color: #B7B7B7;
+}
+
+.logo {
+    color: white;
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    color: white;
+}
+
+.barra-baja {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+a:hover {
+    color: #21AAC6;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+
+
+.slider--inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.3s ease-in;
+}
+
+.slider--inner img {
+    width: 100%;
+}
+
+.banner_1 {
+    width: 100%;
+    height: 100%;
+}
+
+.container-barra {
+    display: flex;
+    justify-content: center;
+
+}
+
+.barra-busqueda {
+    border-radius: 6%;
+    padding-left: 90%;
+    padding-right: 90%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.container-1 {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+
+.container-1 input#search {
+    width: 300px;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+.container-1 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.container-1 input#search:-moz-placeholder {
+
+    color: #65737e;
+}
+
+.container-1 input#search::-moz-placeholder {
+
+    color: #65737e;
+}
+
+.container-1 input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+
+.container-1 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+}
+
+.container-1 input#search:hover,
+.container-1 input#search:focus,
+.container-1 input#search:active {
+    outline: none;
+    background: #ffffff;
+}
+
+/* FIN DE HEADER */
+
+/* BANNER SLIDER */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* FIN BANNER SLIDER */
+
+
+.container-bienvenida {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.container-descripcion {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 7%;
+
+}
+
+
+
+
+
+.container-lo-mejor {
+    background-color: #171717;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    margin-top: 50px;
+    padding-bottom: 60px;
+}
+
+.titulo-mejor {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 7%;
+    font-family: Segoe UI;
+}
+
+.container-padre {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.productos-index {
+    width: 400px;
+    height: 200px;
+}
+
+
+.container-audicion {
+    background-color: #ffffff;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    padding-bottom: 60px;
+
+}
+
+.titulo-audicion {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: Segoe UI;
+}
+
+.container-productos-audicion {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-audifono-1 {
+    width: 100%;
+}
+
+
+.titulo-televsion {
+    text-align: center;
+
+}
+
+.container-productos-tv {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 90px;
+}
+
+.container-perritos {
+    width: 600px;
+    height: 300px;
+
+}
+
+.img-consolas-ps5 {
+    width: 500px;
+    height: 300px;
+}
+
+.boton_change{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 7%;
+    background-color: #21AAC6;
+    color: white;
+}
+
+
+/* ++++++++++++++++++++ FOOTER +++++++++++++++++++++*/
+
+.iconos {
+    background-color: #2F265D;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: white;
+}
+
+.condiciones {
+    background-color: #171717;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 4%;
+    text-align: center;
+}
+
+.barra_final {
+    background-color: #2F265D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.f-carousel__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100px;
+    text-align: center;
+    color: #ff3520;
+    background: #f3f3f3;
+    font-size: 1.25rem;
+}
+
+.f-carousel__slide.is-nav-selected {
+    color: #fff;
+    background: #ff3520;
+}
+
+#myCarousel {
+    --f-carousel-slide-width: 100%;
+    --f-carousel-spacing: 10px;
+
+    margin-bottom: 1rem;
+}
+
+#myNavigation {
+    --f-carousel-slide-width: 100px;
+    --f-carousel-spacing: 5px;
+}
